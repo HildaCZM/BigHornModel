@@ -33,9 +33,9 @@ if ( Environmental.Policy== 0)
     Supply.Permit.Ejido<-No.Permits.Ejido # [bighorn sheep/year]
     Used.Permits.Ejido<-min(Demand.Permit.Ejido,Supply.Permit.Ejido) # [bighorn sheep/year]
     Income.From.Permits<-Used.Permits.Ejido*Price.Permit.Ejido  # [usdx1000/year]
-    Costo.Manejo.del.Habitat<-Gasto.UMA.Guia+Gasto.UMA.Vigilancia+Gasto.UMA.Manteminto.Habitat #[usdx1000/year]
-    Costos.Operacion.UMA<-Gasto.Asistencia.Convencion+Costo.Manejo.del.Habitat-Tasa.Subsido  #[usdx1000/year]
-    Rentabilidad.UMA<-Income.From.Permits-Costos.Operacion.UMA # [usdx1000/año]
+    Cost.Habitat.Management<-Cost.UMA.Guide+Cost.UMA.Surveillance+Cost.UMA.Habitat.Maintenence #[usdx1000/year]
+    Operating.Costs.UMA<-Cost.Attendance.Convention+Cost.Habitat.Management-Subsisdy.Rate  #[usdx1000/year]
+    Profitability.UMA<-Income.From.Permits-Operating.Costs.UMA # [usdx1000/year]
 
 #Exogenous raainfall changes
     Rainfall.Change<-Rainfall.Change.Scenario(t) # Precip/Precip.historic.average
